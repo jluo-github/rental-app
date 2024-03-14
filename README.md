@@ -3,21 +3,21 @@ Please visit
 ### npm
 
 ```
-
-
-```
-
-### npm
-
-```
-
+npm i react-icons
 
 ```
 
 ### npm
 
 ```
+npm i react-spinners
 
+```
+
+### npm
+
+```
+npm i mongodb mongoose
 
 ```
 
