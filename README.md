@@ -42,20 +42,22 @@ npm i react-toastify
 
   import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
-  
-```
-
-### npm
-
-```
-
 
 ```
 
 ### npm
 
 ```
+npm install --save react-map-gl mapbox-gl
 
+npm i react-geocode
+
+```
+
+### npm
+
+```
+npm i react-share
 
 ```
 

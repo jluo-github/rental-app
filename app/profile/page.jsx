@@ -69,7 +69,7 @@ const ProfilePage = () => {
   return (
     <section className='bg-violet-100'>
       <div className='container m-auto py-24'>
-        {/* <div className='bg-violet-100 px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0'> */}
+        {/* <div className='bg-violet-100 px-6 py-8 mb-4 shadow-2xl rounded-md border m-4 md:m-0'> */}
         <h1 className='text-3xl font-bold mb-4'>Your Profile</h1>
         <div className='flex flex-col md:flex-row'>
           <div className='md:w-1/4 mx-20 mt-10'>
