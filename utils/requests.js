@@ -10,7 +10,7 @@ async function fetchProperties() {
       throw new Error("Failed to fetch properties. Domain not set.");
     }
 
-    const res = await fetch(`${url}/properties`);
+    const res = await fetch(`${url}/properties`, {cache: "no-store"});
     if (!res.ok) {
       throw new Error("Something went wrong");
     }

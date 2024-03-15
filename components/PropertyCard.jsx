@@ -27,14 +27,14 @@ const PropertyCard = ({ property }) => {
   return (
     <div className='rounded-xl shadow-md relative'>
       <Image
-        src={`/images/properties/${property.images[0]}`}
+        src={property.images[0]}
         sizes='100vw'
         height={0}
         width={0}
         alt=''
         className='w-full h-auto rounded-t-xl'
       />
-      <div className='p-4'>
+      <div className='p-4 bg-violet-200 shadow-2xl'>
         <div className='text-left md:text-center lg:text-left mb-6'>
           <div className='text-gray-600'>{property.type}</div>
           <h3 className='text-xl font-bold'>{property.name}</h3>
@@ -59,7 +59,7 @@ const PropertyCard = ({ property }) => {
           </p>
         </div>
 
-        <div className='flex justify-center gap-4 text-green-900 text-sm mb-4'>
+        <div className='flex justify-center gap-4 text-violet-800 text-sm mb-4'>
           {property.rates.nightly && (
             <p>
               <FaMoneyBill className='inline mr-1' /> Nightly

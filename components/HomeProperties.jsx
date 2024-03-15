@@ -2,8 +2,6 @@ import PropertyCard from "@/components/PropertyCard";
 import { fetchProperties } from "@/utils/requests";
 import Link from "next/link";
 
-
-
 const HomeProperties = async () => {
   const properties = await fetchProperties();
 
@@ -33,7 +31,7 @@ const HomeProperties = async () => {
       <section className='m-auto max-w-lg my-10 px-6'>
         <Link
           href='properties'
-          className='block bg-violet-700 text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700'>
+          className='block bg-violet-600 text-white text-center py-4 px-6 rounded-xl hover:bg-violet-800'>
           View All Properties
         </Link>
       </section>
