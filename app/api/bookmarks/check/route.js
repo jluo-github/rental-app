@@ -25,7 +25,7 @@ export const POST = async (request) => {
     // Check if property is bookmarked
     let isBookmarked = user.bookmarks.includes(propertyId);
 
-    return Response(JSON.stringify({ isBookmarked }), { status: 200 });
+    return new Response(JSON.stringify({ isBookmarked }), { status: 200 });
   } catch (error) {
     console.log(error);
     return new Response("Something went wrong", { status: 500 });

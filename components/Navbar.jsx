@@ -7,6 +7,7 @@ import logo from "@/assets/images/logo.png";
 import profileDefault from "@/assets/images/profile.png";
 import { FaGoogle } from "react-icons/fa";
 import { useSession, signIn, signOut, getProviders } from "next-auth/react";
+import UnreadMessageCount from "./UnreadMessageCount";
 
 const Navbar = () => {
   // if logged in, session will be an object, else it will be null
@@ -146,10 +147,7 @@ const Navbar = () => {
                     />
                   </svg>
                 </button>
-                <span className='absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-Fuchsia-600 rounded-full'>
-                  2
-                  {/* <!-- Replace with the actual number of notifications --> */}
-                </span>
+                <UnreadMessageCount session={session} />
               </Link>
 
               {/* user menu*/}
