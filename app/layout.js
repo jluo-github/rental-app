@@ -9,8 +9,6 @@ import { GlobalProvider } from "@/context/GlobalContext";
 const inter = Inter({ subsets: ["latin"] });
 import "photoswipe/dist/photoswipe.css";
 
-
-
 export const metadata = {
   title: "Property Management System",
   description: "Property management system for real estate companies",

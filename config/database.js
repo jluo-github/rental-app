@@ -8,7 +8,7 @@ const connectDB = async () => {
   // if connected,return null
 
   if (connected) {
-    console.log("MongoDB is already connected");
+    // console.log("MongoDB is already connected");
     return;
   }
 
@@ -17,7 +17,7 @@ const connectDB = async () => {
     await mongoose.connect(process.env.MONGODB_URI);
 
     connected = true;
-    console.log("MongoDB is connected");
+    // console.log("MongoDB is connected");
   } catch (error) {
     console.log(error);
   }
