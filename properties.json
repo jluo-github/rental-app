@@ -1,384 +1,232 @@
 [
   {
-    "_id": "1",
-    "owner": "1",
-    "name": "Boston Commons Retreat",
-    "type": "Apartment",
-    "description": "This is a beautiful apartment located near the commons. It is a 2 bedroom apartment with a full kitchen and bathroom. It is available for weekly or monthly rentals.",
+    "owner": "4",
+    "name": "Beachfront Villa",
+    "type": "Villa",
+    "description": "Relax in luxury at this beachfront villa with breathtaking ocean views.",
     "location": {
-      "street": "120 Tremont Street",
-      "city": "Boston",
-      "state": "MA",
-      "zipcode": "02108"
+      "street": "123 Ocean Drive",
+      "city": "Miami Beach",
+      "state": "FL",
+      "zipcode": "33139"
     },
-    "beds": 2,
-    "baths": 1,
-    "square_feet": 1500,
+    "beds": 5,
+    "baths": 4,
+    "square_feet": 3500,
     "amenities": [
-      "Wifi",
-      "Full kitchen",
-      "Washer & Dryer",
-      "Free Parking",
-      "Hot Tub",
-      "24/7 Security",
-      "Wheelchair Accessible",
-      "Elevator Access",
-      "Dishwasher",
-      "Gym/Fitness Center",
-      "Air Conditioning",
-      "Balcony/Patio",
-      "Smart TV",
-      "Coffee Maker"
+      "Beach Access",
+      "Private Pool",
+      "Outdoor Dining Area",
+      "Gym",
+      "Smart Home System"
     ],
     "rates": {
-      "weekly": 1100,
-      "monthly": 4200
+      "nightly": 800,
+      "weekly": 5000
     },
     "seller_info": {
-      "name": "John Doe",
-      "email": "john@gmail.com",
-      "phone": "617-555-5555"
+      "name": "Michael Johnson",
+      "email": "michael@gmail.com",
+      "phone": "305-555-5555"
     },
-    "images": ["a1.jpg", "a2.jpg", "a3.jpg"],
+    "images": [],
     "is_featured": false,
-    "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2024-01-01T00:00:00.000Z"
+    "createdAt": "2024-01-11T00:00:00.000Z",
+    "updatedAt": "2024-01-11T00:00:00.000Z"
   },
   {
-    "_id": "2",
-    "owner": "1",
-    "name": "Cozy Downtown Loft",
-    "type": "Apartment",
-    "description": "A cozy downtown loft with great city views.",
+    "owner": "5",
+    "name": "City Center Condo",
+    "type": "Condo",
+    "description": "Live in the heart of the city with modern amenities and easy access to attractions.",
     "location": {
-      "street": "45 Main Street",
+      "street": "456 Downtown Avenue",
       "city": "New York",
       "state": "NY",
       "zipcode": "10001"
     },
     "beds": 1,
     "baths": 1,
-    "square_feet": 1800,
+    "square_feet": 800,
     "amenities": [
-      "Wifi",
-      "Full kitchen",
-      "Washer & Dryer",
-      "Free Parking",
-      "Hot Tub",
-      "24/7 Security",
-      "Wheelchair Accessible",
-      "Elevator Access",
-      "Dishwasher",
-      "High-Speed Internet",
-      "Air Conditioning",
-      "Smart TV",
-      "Outdoor Grill/BBQ"
+      "Gym",
+      "Rooftop Terrace",
+      "Concierge Service",
+      "Smart Home Technology"
     ],
     "rates": {
-      "weekly": 1000,
-      "monthly": 4000
+      "nightly": 200,
+      "weekly": 1200
     },
     "seller_info": {
-      "name": "Jane Smith",
-      "email": "jane@gmail.com",
+      "name": "Emily Wilson",
+      "email": "emily@gmail.com",
       "phone": "212-555-5555"
     },
-    "images": ["b1.jpg", "b2.jpg", "b3.jpg"],
+    "images": [],
     "is_featured": false,
-    "createdAt": "2024-01-02T00:00:00.000Z",
-    "updatedAt": "2024-01-02T00:00:00.000Z"
+    "createdAt": "2024-01-12T00:00:00.000Z",
+    "updatedAt": "2024-01-12T00:00:00.000Z"
   },
   {
-    "_id": "3",
-    "owner": "2",
-    "name": "Luxury Condo with a View",
-    "type": "Condo",
-    "description": "Experience luxury in this stunning condo with breathtaking views.",
+    "owner": "6",
+    "name": "Lakefront Cabin",
+    "type": "Cabin",
+    "description": "Experience nature at its best in this cozy lakefront cabin surrounded by trees.",
     "location": {
-      "street": "500 Lux Lane",
+      "street": "789 Lakeview Drive",
+      "city": "Seattle",
+      "state": "WA",
+      "zipcode": "98101"
+    },
+    "beds": 2,
+    "baths": 1,
+    "square_feet": 1000,
+    "amenities": ["Lake Access", "Wood Burning Fireplace", "Deck", "BBQ Grill"],
+    "rates": {
+      "nightly": 250,
+      "weekly": 1500
+    },
+    "seller_info": {
+      "name": "David Thompson",
+      "email": "david@gmail.com",
+      "phone": "206-555-5555"
+    },
+    "images": [],
+    "is_featured": false,
+    "createdAt": "2024-01-13T00:00:00.000Z",
+    "updatedAt": "2024-01-13T00:00:00.000Z"
+  },
+  {
+    "owner": "7",
+    "name": "Luxury Penthouse",
+    "type": "Penthouse",
+    "description": "Indulge in luxury living at this spacious penthouse with stunning city skyline views.",
+    "location": {
+      "street": "101 Skyline Avenue",
       "city": "Los Angeles",
       "state": "CA",
       "zipcode": "90001"
     },
     "beds": 3,
-    "baths": 2,
-    "square_feet": 2200,
-    "amenities": [
-      "Wifi",
-      "Full kitchen",
-      "Washer & Dryer",
-      "Free Parking",
-      "Hot Tub",
-      "24/7 Security",
-      "Wheelchair Accessible",
-      "Elevator Access",
-      "Dishwasher",
-      "Swimming Pool",
-      "Gym/Fitness Center",
-      "Air Conditioning",
-      "Smart TV",
-      "Coffee Maker"
-    ],
-    "rates": {
-      "nightly": 200,
-      "weekly": 750,
-      "monthly": 3300
-    },
-    "seller_info": {
-      "name": "David Johnson",
-      "email": "david@gmail.com",
-      "phone": "213-555-5555"
-    },
-    "images": ["c1.jpg", "c2.jpg", "c3.jpg"],
-    "is_featured": false,
-    "createdAt": "2024-01-03T00:00:00.000Z",
-    "updatedAt": "2024-01-03T00:00:00.000Z"
-  },
-  {
-    "_id": "4",
-    "owner": "2",
-    "name": "Charming Cottage Getaway",
-    "type": "Cottage Or Cabin",
-    "description": "Escape to this charming cottage for a peaceful retreat.",
-    "location": {
-      "street": "123 Countryside Lane",
-      "city": "Austin",
-      "state": "TX",
-      "zipcode": "78701"
-    },
-    "beds": 1,
-    "baths": 1,
-    "square_feet": 900,
-    "amenities": [
-      "Fireplace",
-      "Outdoor Grill/BBQ",
-      "Balcony/Patio",
-      "Coffee Maker"
-    ],
-    "rates": {
-      "weekly": 2000
-    },
-    "seller_info": {
-      "name": "Emily Davis",
-      "email": "emily@gmail.com",
-      "phone": "512-555-5555"
-    },
-    "images": ["d1.jpg", "d2.jpg", "d3.jpg"],
-    "is_featured": false,
-    "createdAt": "2024-01-04T00:00:00.000Z",
-    "updatedAt": "2024-01-04T00:00:00.000Z"
-  },
-  {
-    "_id": "5",
-    "owner": "3",
-    "name": "Modern Downtown Studio",
-    "type": "Studio",
-    "description": "Stay in style in this modern downtown studio apartment.",
-    "location": {
-      "street": "75 Urban Avenue",
-      "city": "Chicago",
-      "state": "IL",
-      "zipcode": "60601"
-    },
-    "beds": 1,
-    "baths": 1,
-    "square_feet": 900,
-    "amenities": [
-      "High-Speed Internet",
-      "Smart TV",
-      "Air Conditioning",
-      "Gym/Fitness Center",
-      "Outdoor Grill/BBQ"
-    ],
-    "rates": {
-      "weekly": 1100,
-      "monthly": 4200
-    },
-    "seller_info": {
-      "name": "Michael Brown",
-      "email": "michael@gmail.com",
-      "phone": "312-555-5555"
-    },
-    "images": ["e1.jpg", "e2.jpg", "e3.jpg"],
-    "is_featured": true,
-    "createdAt": "2024-01-05T00:00:00.000Z",
-    "updatedAt": "2024-01-05T00:00:00.000Z"
-  },
-  {
-    "_id": "6",
-    "owner": "3",
-    "name": "Seaside Retreat",
-    "type": "House",
-    "description": "Escape to this seaside house for a relaxing getaway.",
-    "location": {
-      "street": "456 Oceanfront Drive",
-      "city": "Miami",
-      "state": "FL",
-      "zipcode": "33101"
-    },
-    "beds": 4,
     "baths": 3,
     "square_feet": 2800,
     "amenities": [
-      "Beach Access",
-      "Swimming Pool",
-      "Balcony/Patio",
-      "Smart TV",
-      "Outdoor Grill/BBQ"
+      "Private Elevator",
+      "Infinity Pool",
+      "Home Theater",
+      "Wine Cellar"
     ],
     "rates": {
-      "nightly": 500,
-      "weekly": 2500
+      "nightly": 1000,
+      "weekly": 6000
     },
     "seller_info": {
-      "name": "Sarah Wilson",
-      "email": "sarah@gmail.com",
-      "phone": "305-555-5555"
+      "name": "Jessica Miller",
+      "email": "jessica@gmail.com",
+      "phone": "213-555-5555"
     },
-    "images": ["f1.jpg", "f2.jpg", "f3.jpg"],
-    "is_featured": true,
-    "createdAt": "2024-01-06T00:00:00.000Z",
-    "updatedAt": "2024-01-06T00:00:00.000Z"
-  },
-  {
-    "_id": "7",
-    "owner": "4",
-    "name": "Rustic Cabin in the Woods",
-    "type": "Cottage Or Cabin",
-    "description": "Experience nature in this cozy rustic cabin.",
-    "location": {
-      "street": "789 Forest Lane",
-      "city": "Denver",
-      "state": "CO",
-      "zipcode": "80201"
-    },
-    "beds": 2,
-    "baths": 1,
-    "square_feet": 1100,
-    "amenities": [
-      "Fireplace",
-      "Outdoor Grill/BBQ",
-      "Hiking Trails Access",
-      "Pet-Friendly"
-    ],
-    "rates": {
-      "nightly": 475,
-      "weekly": 2000
-    },
-    "seller_info": {
-      "name": "Robert Anderson",
-      "email": "robert@gmail.com",
-      "phone": "303-555-5555"
-    },
-    "images": ["g1.jpg", "g2.jpg", "g3.jpg"],
+    "images": [],
     "is_featured": false,
-    "createdAt": "2024-01-07T00:00:00.000Z",
-    "updatedAt": "2024-01-07T00:00:00.000Z"
+    "createdAt": "2024-01-14T00:00:00.000Z",
+    "updatedAt": "2024-01-14T00:00:00.000Z"
   },
   {
-    "_id": "8",
-    "owner": "5",
-    "name": "Ski-In/Ski-Out Chalet",
-    "type": "Chalet",
-    "description": "Hit the slopes from this cozy ski-in/ski-out chalet.",
+    "owner": "8",
+    "name": "Coastal Cottage",
+    "type": "Cottage",
+    "description": "Escape to a charming coastal cottage with ocean breezes and serene surroundings.",
     "location": {
-      "street": "321 Mountain Road",
-      "city": "Aspen",
-      "state": "CO",
-      "zipcode": "81611"
+      "street": "246 Coastal Lane",
+      "city": "Charleston",
+      "state": "SC",
+      "zipcode": "29401"
     },
     "beds": 3,
     "baths": 2,
-    "square_feet": 1800,
+    "square_feet": 1600,
     "amenities": [
-      "Ski Equipment Storage",
-      "Fireplace",
-      "Balcony/Patio",
-      "Smart TV"
+      "Beach Access",
+      "Wraparound Porch",
+      "Outdoor Shower",
+      "Garden"
     ],
     "rates": {
-      "nightly": 300,
-      "weekly": 1100
+      "nightly": 400,
+      "weekly": 2500
     },
     "seller_info": {
-      "name": "Jennifer Martin",
-      "email": "jennifer@gmail.com",
-      "phone": "970-555-5555"
+      "name": "Sarah Anderson",
+      "email": "sarah@gmail.com",
+      "phone": "843-555-5555"
     },
-    "images": ["h1.jpg", "h2.jpg", "h3.jpg"],
+    "images": [],
     "is_featured": false,
-    "createdAt": "2024-01-08T00:00:00.000Z",
-    "updatedAt": "2024-01-08T00:00:00.000Z"
+    "createdAt": "2024-01-15T00:00:00.000Z",
+    "updatedAt": "2024-01-15T00:00:00.000Z"
   },
   {
-    "_id": "9",
-    "owner": "6",
-    "name": "Mountain View Retreat",
+    "owner": "9",
+    "name": "Desert Oasis",
     "type": "House",
-    "description": "Enjoy stunning mountain views from this spacious retreat.",
+    "description": "Discover tranquility in this desert oasis with stunning desert views and modern amenities.",
     "location": {
-      "street": "600 Summit Drive",
-      "city": "Boulder",
-      "state": "CO",
-      "zipcode": "80301"
+      "street": "369 Desert Road",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zipcode": "85001"
     },
     "beds": 4,
     "baths": 3,
-    "square_feet": 2400,
+    "square_feet": 2200,
     "amenities": [
-      "Mountain View",
-      "Hiking Trails Access",
-      "Air Conditioning",
-      "Smart TV",
-      "Outdoor Grill/BBQ"
+      "Desert View",
+      "Pool",
+      "Hot Tub",
+      "Outdoor Dining Area",
+      "Fire Pit"
     ],
     "rates": {
-      "weekly": 1000,
-      "monthly": 3800
+      "nightly": 350,
+      "weekly": 2000
     },
     "seller_info": {
-      "name": "Lisa Taylor",
-      "email": "lisa@gmail.com",
-      "phone": "303-555-5555"
+      "name": "Daniel Clark",
+      "email": "daniel@gmail.com",
+      "phone": "602-555-5555"
     },
-    "images": ["i1.jpg", "i2.jpg", "i3.jpg"],
+    "images": [],
     "is_featured": false,
-    "createdAt": "2024-01-09T00:00:00.000Z",
-    "updatedAt": "2024-01-09T00:00:00.000Z"
+    "createdAt": "2024-01-16T00:00:00.000Z",
+    "updatedAt": "2024-01-16T00:00:00.000Z"
   },
   {
-    "_id": "10",
-    "owner": "7",
-    "name": "Historic Downtown Loft",
-    "type": "Apartment",
-    "description": "Step back in time with a stay in this historic downtown loft.",
+    "owner": "10",
+    "name": "Riverside Retreat",
+    "type": "Cabin",
+    "description": "Experience serenity by the river in this cozy cabin retreat.",
     "location": {
-      "street": "123 History Lane",
-      "city": "Philadelphia",
-      "state": "PA",
-      "zipcode": "19101"
+      "street": "567 Riverside Lane",
+      "city": "Portland",
+      "state": "OR",
+      "zipcode": "97201"
     },
     "beds": 2,
     "baths": 1,
     "square_feet": 1200,
-    "amenities": [
-      "High-Speed Internet",
-      "Air Conditioning",
-      "Smart TV",
-      "Coffee Maker"
-    ],
+    "amenities": ["River Access", "Deck", "Fireplace", "Outdoor Dining Area"],
     "rates": {
-      "weekly": 550,
-      "monthly": 2100
+      "nightly": 180,
+      "weekly": 1000
     },
     "seller_info": {
-      "name": "Matthew Harris",
-      "email": "matthew@gmail.com",
-      "phone": "215-555-5555"
+      "name": "Rebecca Martinez",
+      "email": "rebecca@gmail.com",
+      "phone": "503-555-5555"
     },
-    "images": ["j1.jpg", "j2.jpg", "j3.jpg"],
+    "images": [],
     "is_featured": false,
-    "createdAt": "2024-01-10T00:00:00.000Z",
-    "updatedAt": "2024-01-10T00:00:00.000Z"
+    "createdAt": "2024-01-17T00:00:00.000Z",
+    "updatedAt": "2024-01-17T00:00:00.000Z"
   }
 ]

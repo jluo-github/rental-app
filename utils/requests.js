@@ -3,20 +3,24 @@ const url = process.env.NEXT_PUBLIC_API_DOMAIN || null;
 // http://localhost:3000/api
 
 // fetch properties
-async function fetchProperties() {
+async function fetchProperties({ showFeatured = false } = {}) {
   try {
     // if domain is not set:
     if (!url) {
-      throw new Error("Failed to fetch properties. Domain not set.");
+      return [];
     }
 
-    const res = await fetch(`${url}/properties`, {cache: "no-store"});
+    const res = await fetch(
+      `${url}/properties${showFeatured ? "/featured" : ""}`,
+      {
+        cache: "no-store",
+      }
+    );
     if (!res.ok) {
-      throw new Error("Something went wrong");
+      throw new Error("Failed to fetch data");
     }
 
-    const data = await res.json();
-    return data;
+    return res.json();
   } catch (error) {
     console.log(error);
     return [];

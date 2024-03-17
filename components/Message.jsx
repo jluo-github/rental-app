@@ -3,10 +3,13 @@ import { useState, useEffect } from "react";
 
 import Link from "next/link";
 import { toast } from "react-toastify";
+import { useGlobalContext } from "@/context/GlobalContext";
+import { set } from "mongoose";
 
 const Message = ({ message }) => {
   const [isRead, setIsRead] = useState(message.read);
   const [isDeleted, setIsDeleted] = useState(false);
+  const { setUnreadCount } = useGlobalContext();
 
   const handleReadClick = async () => {
     try {
@@ -17,17 +20,16 @@ const Message = ({ message }) => {
       if (res.status === 200) {
         const { read } = await res.json();
         setIsRead(read);
-
+        setUnreadCount((prevCount) => (read ? prevCount - 1 : prevCount + 1));
         if (read) {
-          toast.success("Message marked as read");
-        } else if (!read) {
-          toast.success("Message marked as new");
+          toast.success("Marked as read");
         } else {
-          toast.error("Something went wrong");
+          toast.success("Marked as new");
         }
       }
     } catch (error) {
       console.log(error);
+      toast.error("Something went wrong");
     }
   };
 
@@ -36,13 +38,14 @@ const Message = ({ message }) => {
       const res = await fetch(`/api/messages/${message._id}`, {
         method: "DELETE",
       });
+
       if (res.status === 200) {
         setIsDeleted(true);
-        toast.success("Message deleted");
-      } else {
-        toast.error("Something went wrong");
+        setUnreadCount((prevCount) => prevCount - 1);
+        toast.success("Message Deleted");
       }
     } catch (error) {
+      console.log(error);
       toast.error("Message was not deleted");
     }
   };

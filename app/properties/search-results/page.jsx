@@ -41,8 +41,8 @@ const SearchResultsPage = () => {
 
   return (
     <>
-      <section className='bg-violet-700 py-4 '>
-        <div className='max-w-7xl mx-auto px-4 flex flex-col items-start sm:px-6 lg:px-8'>
+      <section className='bg-violet-700 py-4 mb-12'>
+        <div className='max-w-7xl mx-auto  px-4 flex flex-col items-start sm:px-6 lg:px-8'>
           <PropertySearchForm />
         </div>
       </section>
@@ -57,7 +57,7 @@ const SearchResultsPage = () => {
               <FaArrowAltCircleLeft className='text-2xl mr-2 mb-2' /> Back to
               Properties
             </Link>
-            <h1 className='text-2xl mb-4'>Search Results</h1>
+            <h1 className='text-2xl my-12'>Search Results</h1>
             {properties.length === 0 ? (
               <p>No search results.</p>
             ) : (

@@ -94,9 +94,10 @@ const PropertyDetails = ({ property }) => {
           ))}
         </ul>
       </div>
-      <div className='bg-violet-50  p-6 rounded-lg shadow-2xl mt-6'>
+      {/* <div className='bg-violet-50  p-6 rounded-lg shadow-2xl mt-6'>
         <div id='map'></div>
-      </div>
+
+      </div> */}
     </main>
   );
 };

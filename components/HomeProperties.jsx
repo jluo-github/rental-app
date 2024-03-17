@@ -3,9 +3,9 @@ import { fetchProperties } from "@/utils/requests";
 import Link from "next/link";
 
 const HomeProperties = async () => {
-  const properties = await fetchProperties();
+  const data = await fetchProperties();
 
-  const recentProperties = properties
+  const recentProperties = data.properties
     .sort(() => Math.random() - Math.random())
     .slice(0, 3);
 
@@ -13,14 +13,14 @@ const HomeProperties = async () => {
     <>
       <section className='px-4 py-6'>
         <div className='container-xl lg:container m-auto'>
-          <h2 className='text-3xl font-bold text-violet-500 mb-6 text-center'>
+          <h2 className='text-3xl font-bold text-violet-500 mb-12 text-center'>
             Recent Properties
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
             {recentProperties === 0 ? (
               <p>No properties found.</p>
             ) : (
-              recentProperties.map((property) => (
+              recentProperties?.map((property) => (
                 <PropertyCard key={property._id} property={property} />
               ))
             )}
@@ -28,7 +28,7 @@ const HomeProperties = async () => {
         </div>
       </section>
 
-      <section className='m-auto max-w-lg my-10 px-6'>
+      <section className='m-auto max-w-lg my-16 px-6'>
         <Link
           href='properties'
           className='block bg-violet-600 text-white text-center py-4 px-6 rounded-xl hover:bg-violet-800'>

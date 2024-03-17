@@ -7,10 +7,21 @@ import cloudinary from "@/config/cloudinary";
 export const GET = async (request) => {
   try {
     await connectDB();
+    const page = request.nextUrl.searchParams.get("page") || 1;
+    // todo: add pagination
+    const pageSize = request.nextUrl.searchParams.get("pageSize") || 6;
 
-    const properties = await Property.find({});
+    const skip = (page - 1) * pageSize;
+    const total = await Property.countDocuments({});
 
-    return new Response(JSON.stringify(properties), {
+    const properties = await Property.find({}).skip(skip).limit(pageSize);
+
+    const result = {
+      total,
+      properties,
+    };
+
+    return new Response(JSON.stringify(result), {
       status: 200,
     });
   } catch (error) {
@@ -87,7 +98,7 @@ export const POST = async (request) => {
 
       // wait for all images to upload
       const uploadedImages = await Promise.all(imageUploadPromises);
-      
+
       // add images to propertyData
       propertyData.images = uploadedImages;
     }
