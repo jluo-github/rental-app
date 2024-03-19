@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 import "photoswipe/dist/photoswipe.css";
 
 export const metadata = {
-  title: "Property Management System",
-  description: "Property management system for real estate companies",
+  title: "Property Rental App",
+  description: "Property rental management system for landlords and tenants",
 };
 
 export default function RootLayout({ children }) {
