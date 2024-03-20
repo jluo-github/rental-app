@@ -13,15 +13,6 @@ Please visit [Property-rental-app](https://property-rental-app-eta.vercel.app/)
 - **React-share:** Used for adding social media sharing buttons.
 - **React-photoswipe-gallery:** Used for displaying image galleries with zoom functionality.
 
-## Installation:
-
-To install the required packages, run the following commands in your terminal:
-
-```
-npm install react-icons react-spinners mongodb mongoose next-auth cloudinary react-toastify react-share react-photoswipe-gallery photoswipe --save
-npm install react-photoswipe-gallery --save
-
-```
 
 ### npm
 
