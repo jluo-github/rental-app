@@ -3,7 +3,7 @@ import { fetchProperties } from "@/utils/requests";
 import FeaturedPropertyCard from "./FeaturedPropertyCard";
 
 const FeaturedProperties = async () => {
-  const properties = await fetchProperties({ showFeatured: true });
+  const properties = await fetchProperties({ is_featured: true });
 
   return (
     properties.length > 0 && (

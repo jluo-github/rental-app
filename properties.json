@@ -228,5 +228,316 @@
     "is_featured": false,
     "createdAt": "2024-01-17T00:00:00.000Z",
     "updatedAt": "2024-01-17T00:00:00.000Z"
+  },
+  {
+    "owner": "4",
+    "name": "Beachfront Villa",
+    "type": "Villa",
+    "description": "Relax in luxury at this beachfront villa with breathtaking ocean views.",
+    "location": {
+      "street": "123 Ocean Drive",
+      "city": "Miami Beach",
+      "state": "FL",
+      "zipcode": "33139"
+    },
+    "beds": 5,
+    "baths": 4,
+    "square_feet": 3500,
+    "amenities": [
+      "Beach Access",
+      "Private Pool",
+      "Outdoor Dining Area",
+      "Gym",
+      "Smart Home System"
+    ],
+    "rates": {
+      "nightly": 800,
+      "weekly": 5000
+    },
+    "seller_info": {
+      "name": "Michael Johnson",
+      "email": "michael@gmail.com",
+      "phone": "305-555-5555"
+    },
+    "images": [],
+    "is_featured": false,
+    "createdAt": "2024-01-11T00:00:00.000Z",
+    "updatedAt": "2024-01-11T00:00:00.000Z"
+  },
+  {
+    "owner": "4",
+    "name": "Mountain Cabin Retreat",
+    "type": "Cabin",
+    "description": "Experience nature in this cozy mountain cabin retreat with stunning views.",
+    "location": {
+      "street": "456 Forest Lane",
+      "city": "Big Sky",
+      "state": "MT",
+      "zipcode": "59716"
+    },
+    "beds": 2,
+    "baths": 1,
+    "square_feet": 1200,
+    "amenities": [
+      "Fireplace",
+      "Hiking Trails Access",
+      "Outdoor Hot Tub",
+      "BBQ Grill"
+    ],
+    "rates": {
+      "nightly": 250,
+      "weekly": 1500
+    },
+    "seller_info": {
+      "name": "Emily Wilson",
+      "email": "emily@gmail.com",
+      "phone": "406-555-5555"
+    },
+    "images": [],
+    "is_featured": false,
+    "createdAt": "2024-01-11T00:00:00.000Z",
+    "updatedAt": "2024-01-11T00:00:00.000Z"
+  },
+  {
+    "owner": "4",
+    "name": "Downtown Condo",
+    "type": "Condo",
+    "description": "Enjoy city life in this modern downtown condo with convenient access to attractions.",
+    "location": {
+      "street": "789 Main Street",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10001"
+    },
+    "beds": 1,
+    "baths": 1,
+    "square_feet": 800,
+    "amenities": ["Gym", "Rooftop Deck", "Wi-Fi", "Smart TV"],
+    "rates": {
+      "nightly": 200,
+      "weekly": 1200
+    },
+    "seller_info": {
+      "name": "John Smith",
+      "email": "john@gmail.com",
+      "phone": "212-555-5555"
+    },
+    "images": [],
+    "is_featured": false,
+    "createdAt": "2024-01-11T00:00:00.000Z",
+    "updatedAt": "2024-01-11T00:00:00.000Z"
+  },
+  {
+    "owner": "4",
+    "name": "Lakefront Cottage",
+    "type": "Cottage",
+    "description": "Unwind by the lake in this charming cottage surrounded by nature.",
+    "location": {
+      "street": "101 Lakeview Drive",
+      "city": "Lake Tahoe",
+      "state": "CA",
+      "zipcode": "96150"
+    },
+    "beds": 3,
+    "baths": 2,
+    "square_feet": 1500,
+    "amenities": ["Dock Access", "Kayaks", "Fire Pit", "Outdoor Dining Area"],
+    "rates": {
+      "nightly": 300,
+      "weekly": 1800
+    },
+    "seller_info": {
+      "name": "Sarah Johnson",
+      "email": "sarah@gmail.com",
+      "phone": "530-555-5555"
+    },
+    "images": [],
+    "is_featured": false,
+    "createdAt": "2024-01-11T00:00:00.000Z",
+    "updatedAt": "2024-01-11T00:00:00.000Z"
+  },
+  {
+    "owner": "4",
+    "name": "Historic Townhouse",
+    "type": "Townhouse",
+    "description": "Step back in time with a stay in this beautifully restored historic townhouse.",
+    "location": {
+      "street": "246 Heritage Lane",
+      "city": "Charleston",
+      "state": "SC",
+      "zipcode": "29401"
+    },
+    "beds": 4,
+    "baths": 3,
+    "square_feet": 2200,
+    "amenities": [
+      "Antique Furnishings",
+      "Courtyard Garden",
+      "Library",
+      "Wi-Fi"
+    ],
+    "rates": {
+      "nightly": 400,
+      "weekly": 2500
+    },
+    "seller_info": {
+      "name": "David Brown",
+      "email": "david@gmail.com",
+      "phone": "843-555-5555"
+    },
+    "images": [],
+    "is_featured": false,
+    "createdAt": "2024-01-11T00:00:00.000Z",
+    "updatedAt": "2024-01-11T00:00:00.000Z"
+  },
+  {
+    "owner": "4",
+    "name": "Ski Chalet",
+    "type": "Chalet",
+    "description": "Ski-in/ski-out access awaits at this cozy chalet nestled in the mountains.",
+    "location": {
+      "street": "369 Ski Trail Road",
+      "city": "Vail",
+      "state": "CO",
+      "zipcode": "81657"
+    },
+    "beds": 4,
+    "baths": 3,
+    "square_feet": 2000,
+    "amenities": ["Ski Equipment Storage", "Hot Tub", "Fireplace", "Deck"],
+    "rates": {
+      "nightly": 350,
+      "weekly": 2200
+    },
+    "seller_info": {
+      "name": "Jessica Miller",
+      "email": "jessica@gmail.com",
+      "phone": "970-555-5555"
+    },
+    "images": [],
+    "is_featured": false,
+    "createdAt": "2024-01-11T00:00:00.000Z",
+    "updatedAt": "2024-01-11T00:00:00.000Z"
+  },
+  {
+    "owner": "4",
+    "name": "Rural Farmhouse",
+    "type": "Farmhouse",
+    "description": "Experience farm life at this charming farmhouse surrounded by rolling hills.",
+    "location": {
+      "street": "789 Farm Road",
+      "city": "Lexington",
+      "state": "KY",
+      "zipcode": "40502"
+    },
+    "beds": 5,
+    "baths": 2,
+    "square_feet": 1800,
+    "amenities": ["Barn", "Pasture", "Vegetable Garden", "Outdoor Grill"],
+    "rates": {
+      "nightly": 280,
+      "weekly": 1600
+    },
+    "seller_info": {
+      "name": "Andrew Clark",
+      "email": "andrew@gmail.com",
+      "phone": "859-555-5555"
+    },
+    "images": [],
+    "is_featured": false,
+    "createdAt": "2024-01-11T00:00:00.000Z",
+    "updatedAt": "2024-01-11T00:00:00.000Z"
+  },
+  {
+    "owner": "4",
+    "name": "Coastal Bungalow",
+    "type": "Bungalow",
+    "description": "Relax by the beach in this cozy coastal bungalow with ocean views.",
+    "location": {
+      "street": "123 Seaside Avenue",
+      "city": "Santa Monica",
+      "state": "CA",
+      "zipcode": "90401"
+    },
+    "beds": 2,
+    "baths": 1,
+    "square_feet": 1000,
+    "amenities": ["Beach Access", "Sun Deck", "Hammocks", "BBQ Area"],
+    "rates": {
+      "nightly": 200,
+      "weekly": 1200
+    },
+    "seller_info": {
+      "name": "Rachel Lee",
+      "email": "rachel@gmail.com",
+      "phone": "310-555-5555"
+    },
+    "images": [],
+    "is_featured": false,
+    "createdAt": "2024-01-11T00:00:00.000Z",
+    "updatedAt": "2024-01-11T00:00:00.000Z"
+  },
+  {
+    "owner": "4",
+    "name": "Urban Loft",
+    "type": "Loft",
+    "description": "Live in style in this modern urban loft located in the heart of the city.",
+    "location": {
+      "street": "456 Loft Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "zipcode": "94107"
+    },
+    "beds": 1,
+    "baths": 1,
+    "square_feet": 900,
+    "amenities": [
+      "Rooftop Pool",
+      "Fitness Center",
+      "Concierge Service",
+      "Smart Home Features"
+    ],
+    "rates": {
+      "nightly": 180,
+      "weekly": 1000
+    },
+    "seller_info": {
+      "name": "Michael Smith",
+      "email": "michael@gmail.com",
+      "phone": "415-555-5555"
+    },
+    "images": [],
+    "is_featured": false,
+    "createdAt": "2024-01-11T00:00:00.000Z",
+    "updatedAt": "2024-01-11T00:00:00.000Z"
+  },
+  {
+    "owner": "4",
+    "name": "Lake House",
+    "type": "House",
+    "description": "Enjoy lakefront living in this spacious house with a private dock.",
+    "location": {
+      "street": "369 Lakeview Drive",
+      "city": "Austin",
+      "state": "TX",
+      "zipcode": "78701"
+    },
+    "beds": 6,
+    "baths": 4,
+    "square_feet": 2800,
+    "amenities": ["Boat Dock", "Kayaks", "Deck", "Outdoor Fireplace"],
+    "rates": {
+      "nightly": 400,
+      "weekly": 2500
+    },
+    "seller_info": {
+      "name": "Elizabeth Turner",
+      "email": "elizabeth@gmail.com",
+      "phone": "512-555-5555"
+    },
+    "images": [],
+    "is_featured": false,
+    "createdAt": "2024-01-11T00:00:00.000Z",
+    "updatedAt": "2024-01-11T00:00:00.000Z"
   }
 ]

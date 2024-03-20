@@ -3,7 +3,7 @@ const url = process.env.NEXT_PUBLIC_API_DOMAIN || null;
 // http://localhost:3000/api
 
 // fetch properties
-async function fetchProperties({ showFeatured = false } = {}) {
+async function fetchProperties({ is_featured = false } = {}) {
   try {
     // if domain is not set:
     if (!url) {
@@ -11,7 +11,7 @@ async function fetchProperties({ showFeatured = false } = {}) {
     }
 
     const res = await fetch(
-      `${url}/properties${showFeatured ? "/featured" : ""}`,
+      `${url}/properties${is_featured ? "/featured" : ""}`,
       {
         cache: "no-store",
       }
