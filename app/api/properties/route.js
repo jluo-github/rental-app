@@ -21,7 +21,7 @@ export const GET = async (request) => {
       properties,
     };
 
-    return new Response(JSON.stringify(result), {
+    return Response.json(result, {
       status: 200,
     });
   } catch (error) {
@@ -79,7 +79,7 @@ export const POST = async (request) => {
     };
 
     // upload images to cloudinary
-    const imageUploadPromises = [];
+    const imageUploads = [];
 
     for (const image of images) {
       const imageBuffer = await image.arrayBuffer();
@@ -94,10 +94,10 @@ export const POST = async (request) => {
         `data:image/png;base64,${imageBase64}`,
         { folder: "property" }
       );
-      imageUploadPromises.push(result.secure_url);
+      imageUploads.push(result.secure_url);
 
       // wait for all images to upload
-      const uploadedImages = await Promise.all(imageUploadPromises);
+      const uploadedImages = await Promise.all(imageUploads);
 
       // add images to propertyData
       propertyData.images = uploadedImages;
@@ -110,7 +110,6 @@ export const POST = async (request) => {
       `${process.env.NEXTAUTH_URL}/properties/${newProperty._id}`
     );
 
-    // return new Response(JSON.stringify({ message: "Hello" }), { status: 200 });
   } catch (error) {
     return new Response("Something went wrong.", { status: 500 });
   }

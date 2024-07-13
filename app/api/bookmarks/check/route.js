@@ -4,7 +4,7 @@ import { getSessionUser } from "@/utils/getSessionUser";
 
 export const dynamic = "force-dynamic";
 
-// 
+//
 
 // POST /api/bookmarks/check
 export const POST = async (request) => {
@@ -25,7 +25,7 @@ export const POST = async (request) => {
     // Check if property is bookmarked
     let isBookmarked = user.bookmarks.includes(propertyId);
 
-    return new Response(JSON.stringify({ isBookmarked }), { status: 200 });
+    return Response.json({ isBookmarked }, { status: 200 });
   } catch (error) {
     console.log(error);
     return new Response("Something went wrong", { status: 500 });

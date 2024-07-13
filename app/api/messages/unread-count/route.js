@@ -23,9 +23,12 @@ export const GET = async (request) => {
       read: false,
     });
 
-    return new Response(JSON.stringify({ count: unreadMessageCount }), {
-      status: 200,
-    });
+    return Response.json(
+      { count: unreadMessageCount },
+      {
+        status: 200,
+      }
+    );
   } catch (error) {
     return new Response("Something went wrong", { status: 500 });
   }

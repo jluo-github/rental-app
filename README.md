@@ -14,14 +14,14 @@ Please visit [Property-rental-app](https://property-rental-app-eta.vercel.app/)
 - **React-photoswipe-gallery:** Used for displaying image galleries with zoom functionality.
 
 
-### npm
+### react-icons
 
 ```
 npm i react-icons
 
 ```
 
-### npm
+### react-spinners
 
 ```
 
@@ -29,7 +29,7 @@ npm i react-spinners
 
 ```
 
-### npm
+### mongodb
 
 ```
 
@@ -37,7 +37,7 @@ npm i mongodb mongoose
 
 ```
 
-### npm
+### next-auth
 
 ```
 
@@ -45,7 +45,7 @@ npm i next-auth
 
 ```
 
-### npm
+### cloudinary
 
 ```
 
@@ -53,7 +53,7 @@ npm i cloudinary
 
 ```
 
-### npm
+### react-toastify
 
 ```
 
@@ -64,7 +64,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 ```
 
-### npm
+### react-share
 
 ```
 
@@ -72,7 +72,7 @@ npm i react-share
 
 ```
 
-### npm
+### photoswipe
 
 ```
 
@@ -84,74 +84,5 @@ import { Gallery, Item } from 'react-photoswipe-gallery'
 
 ```
 
-### npm
 
-```
-
-npm i react-icons
-
-```
-
-### npm
-
-```
-
-npm i react-spinners
-
-```
-
-### npm
-
-```
-
-npm i mongodb mongoose
-
-```
-
-### npm
-
-```
-
-npm i next-auth
-
-```
-
-### npm
-
-```
-
-npm i cloudinary
-
-```
-
-### npm
-
-```
-
-npm i react-toastify
-
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-```
-
-### npm
-
-```
-
-npm i react-share
-
-```
-
-### npm
-
-```
-
-npm install photoswipe react-photoswipe-gallery --save
-
-import 'photoswipe/dist/photoswipe.css'
-
-import { Gallery, Item } from 'react-photoswipe-gallery'
-
-```
 

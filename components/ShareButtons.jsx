@@ -1,11 +1,11 @@
 import {
   FacebookShareButton,
   TwitterShareButton,
-  WhatsappShareButton,
+  RedditShareButton,
   EmailShareButton,
   FacebookIcon,
   TwitterIcon,
-  WhatsappIcon,
+  RedditIcon,
   EmailIcon,
 } from "react-share";
 
@@ -32,12 +32,9 @@ const ShareButtons = ({ property }) => {
           <TwitterIcon size={40} round={true} />
         </TwitterShareButton>
 
-        <WhatsappShareButton
-          url={shareUrl}
-          title={property.name}
-          separator=':: '>
-          <WhatsappIcon size={40} round={true} />
-        </WhatsappShareButton>
+        <RedditShareButton url={shareUrl} title={property.name}>
+          <RedditIcon size={40} round={true} />
+        </RedditShareButton>
 
         <EmailShareButton
           url={shareUrl}

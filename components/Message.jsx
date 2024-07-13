@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { toast } from "react-toastify";
 import { useGlobalContext } from "@/context/GlobalContext";
-import { set } from "mongoose";
 
 const Message = ({ message }) => {
   const [isRead, setIsRead] = useState(message.read);
@@ -41,7 +40,7 @@ const Message = ({ message }) => {
 
       if (res.status === 200) {
         setIsDeleted(true);
-        setUnreadCount((prevCount) => prevCount - 1);
+        setUnreadCount((prevCount) => (isRead ? prevCount : prevCount - 1));
         toast.success("Message Deleted");
       }
     } catch (error) {

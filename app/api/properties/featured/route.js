@@ -9,7 +9,7 @@ export const GET = async (request) => {
       is_featured: true,
     });
 
-    return new Response(JSON.stringify(properties), {
+    return Response.json(properties, {
       status: 200,
     });
   } catch (error) {

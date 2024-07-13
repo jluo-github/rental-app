@@ -15,7 +15,7 @@ export const GET = async (request, { params }) => {
 
     const properties = await Property.find({ owner: userId });
 
-    return new Response(JSON.stringify(properties), {
+    return Response.json(properties, {
       status: 200,
     });
   } catch (error) {

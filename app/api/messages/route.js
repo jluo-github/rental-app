@@ -58,9 +58,8 @@ export const POST = async (request) => {
 
     // cannot send message to self
     // if (user._id === recipient) {
-    //   return new Response(
-    //     (JSON.stringify({ message: "Cannot send message to yourself." }),
-    //     { status: 400 })
+    //   return Response.json(
+    //     ({ message: "Cannot send message to yourself." }, { status: 400 })
     //   );
     // }
 
@@ -75,8 +74,8 @@ export const POST = async (request) => {
     });
 
     await newMessage.save();
-    return new Response(
-      JSON.stringify({ message: "Message sent successfully!" }),
+    return Response.json(
+      { message: "Message sent successfully!" },
       { status: 200 }
     );
   } catch (error) {

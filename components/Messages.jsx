@@ -2,10 +2,13 @@
 import { useState, useEffect } from "react";
 import Spinner from "./Spinner";
 import Message from "./Message";
+import { useGlobalContext } from "@/context/GlobalContext";
 
 const Messages = () => {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(true);
+  // update the unread count
+  const { setUnreadCount } = useGlobalContext();
 
   useEffect(() => {
     const getMessages = async () => {
@@ -16,6 +19,13 @@ const Messages = () => {
           const data = await res.json();
           setMessages(data);
         }
+
+        // Fetch unread message count
+        const countRes = await fetch("/api/messages/unread-count");
+        if (countRes.status === 200) {
+          const countData = await countRes.json();
+          setUnreadCount(countData.count);
+        }
       } catch (error) {
         console.log("Error fetching messages: ", error);
       } finally {
@@ -24,7 +34,7 @@ const Messages = () => {
     };
 
     getMessages();
-  }, []);
+  }, [setUnreadCount]);
 
   return loading ? (
     <Spinner loading={loading}></Spinner>
