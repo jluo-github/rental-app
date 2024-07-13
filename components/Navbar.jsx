@@ -8,6 +8,7 @@ import profileDefault from "@/assets/images/profile.png";
 import { FaGoogle } from "react-icons/fa";
 import { useSession, signIn, signOut, getProviders } from "next-auth/react";
 import UnreadMessageCount from "./UnreadMessageCount";
+import { useOutsideClick } from "./useOutsideClick";
 
 const Navbar = () => {
   // if logged in, session will be an object, else it will be null
@@ -20,6 +21,11 @@ const Navbar = () => {
   const [providers, setProviders] = useState(null);
 
   const pathname = usePathname();
+
+  // close the profile menu when clicked outside
+  const ref = useOutsideClick(() => {
+    setIsProfileMenuOpen(false);
+  });
 
   useEffect(() => {
     const setAuthProviders = async () => {
@@ -179,6 +185,7 @@ const Navbar = () => {
                 {/* <!-- Profile dropdown --> */}
                 {isProfileMenuOpen && (
                   <div
+                    ref={ref}
                     id='user-menu'
                     className='absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
                     role='menu'
