@@ -7,9 +7,7 @@ Please visit [Rental-app](https://property-rental-app-eta.vercel.app/)
 - **MongoDB and Mongoose:** Used for database operations and data modeling.
 - **Next-auth:** Used for authentication and user management.
 - **Cloudinary:** Used for image and media storage.
-- **React-toastify:** Used for displaying toast notifications.
-- **React-icons:** Used for adding icons to the user interface.
-- **React-spinners:** Used for adding loading spinners.
+- **React-toastify:** Used for displaying toast notifications. 
 - **React-share:** Used for adding social media sharing buttons.
 - **React-photoswipe-gallery:** Used for displaying image galleries with zoom functionality.
 
