@@ -1,4 +1,4 @@
-Please visit [Property-rental-app](https://property-rental-app-eta.vercel.app/)
+Please visit [Rental-app](https://property-rental-app-eta.vercel.app/)
 
 ## Skills and Tools Used
 
